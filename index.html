@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-Website-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a href=""class="logo">Groco</a>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Review.html">Review</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="/Images/menu.png" id="menu">
+            <div class="icons">
+                <img src="/Images/search.png" id="search">
+                <img src="/Images/cart.png" id="cart" onclick="ShowMenu()">
+                <img src="/Images/login.png" id="login" onclick="ShowLogin()">
+                <div id="search-box">
+                    <input type="text" placeholder="Search Here...">
+                    <img src="/Images/search.png">
+                </div>
+                <div id="shopping-cart">
+                       <div class="row">
+                        <div class="col">
+                            <img src="/Images/cart-1.jpg" id="cart-1">
+                            <div class="small-info">
+                                <h4>Organic Food</h4>
+                                <p>1* $18.99</p>
+                            </div>
+                        </div>
+                            <img src="/Images/close.png" class="close">
+                       </div>
+                       <div class="row">
+                        <div class="col">
+                            <img src="/Images/cart-2.jpg" id="cart-1">
+                            <div class="small-info">
+                                <h4>Organic Food</h4>
+                                <p>1* $18.99</p>
+                            </div>
+                        </div>
+                            <img src="/Images/close.png" class="close">
+                       </div>
+                       <div class="row">
+                        <div class="col">
+                            <img src="/Images/cart-3.jpg" id="cart-1">
+                            <div class="small-info">
+                                <h4>Organic Food</h4>
+                                <p>1* $18.99</p>
+                            </div>
+                        </div>
+                            <img src="/Images/close.png" class="close">
+                       </div>
+                       <div class="total-count">
+                           <h4>Total:<strong>56.97</strong></h4>
+                       </div>
+                       <a href="">Checkout Cart</a>
+                </div>
+            </div>
+        </nav>
+        <div id="login-section">
+            <div class="links">
+                <span id="LgBtn">LOGIN</span>
+                <span id="RegBtn">REGISTER</span>
+            </div>
+
+            <form id="LoginForm">
+                <input type="email" placeholder="enter your email"required>
+                <input type="password" placeholder="enter your password"required id="password">
+                  <p id="pwd">Your Password <span id="strength"></span></p>
+                <br>
+                <input type="checkbox" class="checkbox"><span>Remember Me</span>
+                <br>
+                <button type="submit">Login Now</button>
+                <p>Forgot Password <a href="">Click Here</a></p>
+                <p>Don't Have An Account <a href="#RegisterForm">Create One</a></p>
+            </form>
+
+            <form id="RegisterForm">
+                <input type="email"placeholder="enter your email" required>
+                <input type="text"placeholder="First Name" required>
+                <input type="password" placeholder="enter your password"required>
+                <input type="password" placeholder="confirm your password"required>
+                <button type="submit">Register Now</button>
+                <br>
+                <input type="checkbox" class="checkbox"><span>Remember Me</span>
+            </form>
+        </div>
+        <div id="textbox">
+                    <h3>Fresh And Organic</h3>
+                    <h1>Upto 50% Off</h1>
+                    <a href="">Shop Now</a>
+        </div>
+        <div class="preview">
+            <img src="/Images/home-img-1.png" class="backgroundImg active">
+            <img src="/Images/home-img-2.png" class="backgroundImg">
+            <img src="/Images/home-img-3.png" class="backgroundImg">
+        </div>
+        <div class="controls">
+            <img src="/Images/arrow.png" id="prev">
+            <img src="/Images/arrow.png" id="next">
+        </div>
+    </section>
+    <section class="products">
+        <div class="products-row">
+            <div class="products-col">
+                 <img src="/Images/banner-1.jpg">
+                 <div class="content">
+                     <p>Limited Sales</p>
+                     <h3>Upto 75% Off</h3>
+                     <a href="">Shop Now</a>
+                 </div>
+            </div>
+            <div class="products-col">
+                <img src="/Images/banner-2.jpg">
+                <div class="content">
+                    <p>Limited Sales</p>
+                    <h3>Upto 75% Off</h3>
+                    <a href="">Shop Now</a>
+                </div>
+           </div>
+           <div class="products-col">
+                 <img src="/Images/banner-3.jpg">
+                 <div class="content">
+                     <p>Limited Sales</p>
+                     <h3>Upto 75% Off</h3>
+                     <a href="">Shop Now</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                 <h4>Quick Links</h4>
+                 <div class="footers">
+                    <p>&#8594 Home</p>
+                    <p>&#8594 Shop</p>
+                    <p>&#8594 About</p>
+                    <p>&#8594 Review</p>
+                    <p>&#8594 Blog</p>
+                    <p>&#8594 Contact</p>
+                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>Extra Links</h4>
+                <div class="footers">
+                   <p>&#8594 My Account</p>
+                   <p>&#8594 My Order</p>
+                   <p>&#8594 My Wishlist</p>
+                   <p>&#8594 My Favourite</p>
+                   <p>&#8594 Terms of Use</p>
+                </div>
+           </div>
+           <div class="footer-col">
+               <h4>Follow Us</h4>
+                 <div class="social-link">
+                     <img src="/Images/facebook.png">
+                     <h5>Facebook</h5>
+                 </div>
+                 <div class="social-link">
+                    <img src="/Images/twitter.png">
+                    <h5>Twitter</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/instagram.png">
+                    <h5>Instagram</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/pinterest.png">
+                    <h5>Pinterest</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/facebook.png">
+                    <h5>Facebook</h5>
+                </div>
+           </div>
+           <div class="footer-col">
+               <h4>Newsletter</h4>
+               <p>Subscribe For Latest Updates</p>
+               <input type="email" placeholder="enter your email">
+               <br>
+               <button type="submit">Submit</button>
+               <img src="/Images/payment.png" class="payment">
+           </div>
+        </div>
+        <div class="bottom-footer">
+            <h6>Created By Mr.Jimmy Mwangi | All Rights Reserved</h6>
+        </div>
+    </section>
+    <script>
+        var backgroundImg = document.getElementsByClassName('backgroundImg');
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var textbox = document.getElementById('textbox');
+        var search = document.getElementById('search');
+        var searchBox = document.getElementById('search-box');
+        var shoppingCart = document.getElementById('shopping-cart');
+        var LgBtn = document.getElementById('LgBtn');
+        var RegBtn = document.getElementById('RegBtn');
+        var RegisterForm = document.getElementById('RegisterForm');
+        var LoginForm = document.getElementById('LoginForm');
+        var loginSection = document.getElementById('login-section');
+        var pwd = document.getElementById('pwd');
+        var pass = document.getElementById('password');
+        var str = document.getElementById('strength');
+        var row = document.getElementsByClassName('row');
+        var close = document.getElementsByClassName('close');
+        var menu = document.querySelector('#menu');
+        var navBar = document.getElementById('nav-links');
+
+        let i = 0;
+        next.onclick = ()=>{
+            backgroundImg[i+1].classList.add("active");
+            backgroundImg[i].classList.remove("active");
+            textbox.classList.add("animate");
+            i++;
+        }
+        prev.onclick = ()=>{
+            backgroundImg[i-1].classList.add("active");
+            backgroundImg[i].classList.remove("active");
+            i--;
+        }
+          searchBox.style.top = "-60px";
+        search.onclick =()=>{
+            if( searchBox.style.top == "-60px"){
+                searchBox.style.top = "90px";
+            }
+            else{
+                searchBox.style.top = "-60px";
+            }
+        }
+          
+        shoppingCart.style.top = "-590px";
+        function ShowMenu(){
+           if(shoppingCart.style.top === "-590px"){
+            shoppingCart.style.top = "90px";
+           }
+           else{
+            shoppingCart.style.top = "-590px";
+           }
+        }
+        LgBtn.onclick = ()=>{
+            LoginForm.style.transform = 'translateX(0px)';
+            RegisterForm.style.transform = 'translateX(0px)';
+        }
+        RegBtn.onclick = ()=>{
+            LoginForm.style.transform = 'translateX(350px)';
+            RegisterForm.style.transform = 'translateX(350px)';
+        }
+        loginSection.style.top = "-460px";
+        function ShowLogin(){
+           if(loginSection.style.top === "-460px"){
+               loginSection.style.top = "90px";
+           }
+           else{
+            loginSection.style.top = "-460px";
+           }
+        }
+        //to learn//
+        pass.addEventListener('input',()=>{
+            if(pass.value.length >0){
+                pwd.style.display='block';
+            }
+            else{
+                pwd.style.display = 'none'
+            }
+            if(pass.value.length <4){
+                str.innerHTML = 'is weak';
+            }
+            else if(pass.value.length>=4&&pass.value.length<8){
+                str.innerHTML = 'is medium';
+            }
+            else if(pass.value.length>=8){
+                str.innerHTML = ' is strong';
+            }
+        })
+        close[0].onclick = function(){
+            row[0].style.display = 'none';
+            close.style.display = 'none';
+        }
+        close[1].onclick = function(){
+            row[1].style.display = 'none';
+            close.style.display = 'none';
+        }
+        close[2].onclick = function(){
+            row[2].style.display = 'none';
+            close.style.display = 'none';
+        }
+        navBar.style.right = '-300px';
+        menu.onclick =()=>{
+            if( navBar.style.right === '-300px'){
+                navBar.style.right = '0px';
+                menu.src ="/Images/close.png"
+            }
+            else{
+                navBar.style.right = '-300px';
+                menu.src ="/Images/menu.png"
+            }
+        }
+    </script>
+</body>
+</html>

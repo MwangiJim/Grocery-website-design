@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery-Website-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="shop-header">
+        <nav>
+            <a href=""class="logo">Groco</a>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Review.html">Review</a></li>
+                    <li><a href="/Blog.html">Blog</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text">
+            <h1>About Us</h1>
+            <p>Home >> Contact</p>
+        </div>
+    </section>
+      <div class="contacts">
+          <div class="contacts-row">
+              <div class="contacts-col">
+                  <img src="/Images/phone.jpg"id="phone">
+                  <h4>Our Number</h4>
+                  <div>
+                      <span>+254 0797950171</span>
+                      <span>+254 0775396586</span>
+                  </div>
+              </div>
+              <div class="contacts-col">
+                <img src="/Images/mail.png"id="phone">
+                <h4>Our Email</h4>
+                <div>
+                    <span>kingongo233@gmail.com</span>
+                    <span>kingmwangi@gmail.com</span>
+                </div>
+            </div>
+            <div class="contacts-col">
+                <img src="/Images/location.png"id="phone">
+                <h4>Our Address</h4>
+                 <p>Nairobi,Kenya - 400104</p>
+            </div>
+          </div>
+      </div>
+      <div class="form-location">
+          <div class="form-row">
+              <div class="form-col">
+                  <h3>Get In Touch</h3>
+                  <div class="first-col">
+                      <input type="text"placeholder="your name">
+                      <input type="email"placeholder="your email">
+                  </div>
+                  <div class="first-col">
+                    <input type="number"placeholder="your number">
+                    <input type="text"placeholder="your subject">
+                   </div>
+                   <textarea  rows="15" placeholder="your message"></textarea>
+                   <button type="submit">Send Message</button>
+              </div>
+              <div class="form-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104278.62446118915!2d36.86762689730686!3d-1.274131377533567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport!5e0!3m2!1sen!2ske!4v1634672531638!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                 <h4>Quick Links</h4>
+                 <div class="footers">
+                    <p>&#8594 Home</p>
+                    <p>&#8594 Shop</p>
+                    <p>&#8594 About</p>
+                    <p>&#8594 Review</p>
+                    <p>&#8594 Blog</p>
+                    <p>&#8594 Contact</p>
+                 </div>
+            </div>
+            <div class="footer-col">
+                <h4>Extra Links</h4>
+                <div class="footers">
+                   <p>&#8594 My Account</p>
+                   <p>&#8594 My Order</p>
+                   <p>&#8594 My Wishlist</p>
+                   <p>&#8594 My Favourite</p>
+                   <p>&#8594 Terms of Use</p>
+                </div>
+           </div>
+           <div class="footer-col">
+               <h4>Follow Us</h4>
+                 <div class="social-link">
+                     <img src="/Images/facebook.png">
+                     <h5>Facebook</h5>
+                 </div>
+                 <div class="social-link">
+                    <img src="/Images/twitter.png">
+                    <h5>Twitter</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/instagram.png">
+                    <h5>Instagram</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/pinterest.png">
+                    <h5>Pinterest</h5>
+                </div>
+                <div class="social-link">
+                    <img src="/Images/facebook.png">
+                    <h5>Facebook</h5>
+                </div>
+           </div>
+           <div class="footer-col">
+               <h4>Newsletter</h4>
+               <p>Subscribe For Latest Updates</p>
+               <input type="email" placeholder="enter your email">
+               <br>
+               <button type="submit">Submit</button>
+               <img src="/Images/payment.png" class="payment">
+           </div>
+        </div>
+        <div class="bottom-footer">
+            <h6>Created By Mr.Jimmy Mwangi | All Rights Reserved</h6>
+        </div>
+    </section>
+    <script>
+        var backgroundImg = document.getElementsByClassName('backgroundImg');
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var textbox = document.getElementById('textbox');
+        var search = document.getElementById('search');
+        var searchBox = document.getElementById('search-box');
+        var shoppingCart = document.getElementById('shopping-cart');
+        var LgBtn = document.getElementById('LgBtn');
+        var RegBtn = document.getElementById('RegBtn');
+        var RegisterForm = document.getElementById('RegisterForm');
+        var LoginForm = document.getElementById('LoginForm');
+        var loginSection = document.getElementById('login-section');
+
+        let i = 0;
+        next.onclick = ()=>{
+            backgroundImg[i+1].classList.add("active");
+            backgroundImg[i].classList.remove("active");
+            textbox.classList.add("animate");
+            i++;
+        }
+        prev.onclick = ()=>{
+            backgroundImg[i-1].classList.add("active");
+            backgroundImg[i].classList.remove("active");
+            i--;
+        }
+          searchBox.style.top = "-60px";
+        search.onclick =()=>{
+            if( searchBox.style.top == "-60px"){
+                searchBox.style.top = "90px";
+            }
+            else{
+                searchBox.style.top = "-60px";
+            }
+        }
+          
+        shoppingCart.style.top = "-450px";
+        function ShowMenu(){
+           if(shoppingCart.style.top === "-450px"){
+            shoppingCart.style.top = "90px";
+           }
+           else{
+            shoppingCart.style.top = "-450px";
+           }
+        }
+        LgBtn.onclick = ()=>{
+            LoginForm.style.transform = 'translateX(0px)';
+            RegisterForm.style.transform = 'translate(0px)';
+        }
+        RegBtn.onclick = ()=>{
+            LoginForm.style.transform = 'translateX(350px)';
+            RegisterForm.style.transform = 'translate(350px)';
+        }
+        loginSection.style.top = "-460px";
+        function ShowLogin(){
+           if(loginSection.style.top === "-460px"){
+               loginSection.style.top = "90px";
+           }
+           else{
+            loginSection.style.top = "-460px";
+           }
+        }
+    </script>
+</body>
+</html>
